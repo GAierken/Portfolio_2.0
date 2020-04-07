@@ -8,7 +8,8 @@ function App() {
   return (
     <React.Fragment>
       <Contacts/>
-      <Header as='h1'>Guligena Aierken</Header>
+      <Header textAlign='center' as='h1'>Guligena Aierken</Header>
+      <Header textAlign='center' as='h3'>Full Stack Developer | Software Engineer</Header>
       
       
     </React.Fragment>

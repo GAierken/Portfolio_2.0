@@ -6,11 +6,11 @@ import { Icon } from 'semantic-ui-react'
     
     return (
         <div>
-            <Icon link size="big" name='linkedin'/>
-            <Icon link size="big" name='github square'/>
-            <Icon link size="big" name='medium'/>
-            <Icon link size="big" name='mail'/>
-            <Icon link size="big" name='file alternate'/>
+            <Icon link size="big" name='linkedin' onClick={() => {window.location.assign('https://www.linkedin.com/in/guligena-aierken/')}}/>
+            <Icon link size="big" name='github square' onClick={() => {window.location.assign('https://github.com/GAierken')}}/>
+            <Icon link size="big" name='medium' onClick={() => {window.location.assign('https://medium.com/@g.aierken')}}/>
+            <Icon link size="big" name='mail' onClick={() => {window.location.assign('mailto:g.aierken@gmail.com')}}/>
+            <Icon link size="big" name='file alternate' onClick={() => {console.log('download resume')}}/>
         </div>
         
     )
