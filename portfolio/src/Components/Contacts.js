@@ -2,13 +2,15 @@ import React from 'react'
 import { Icon } from 'semantic-ui-react'
 
  const Contacts = () => {
+
+    
     return (
         <div>
-            <Icon name='linkedin'/>
-            <Icon name='github square'/>
-            <Icon name='medium'/>
-            <Icon name='mail'/>
-            <Icon name='file alternate'/>
+            <Icon link size="big" name='linkedin'/>
+            <Icon link size="big" name='github square'/>
+            <Icon link size="big" name='medium'/>
+            <Icon link size="big" name='mail'/>
+            <Icon link size="big" name='file alternate'/>
         </div>
         
     )

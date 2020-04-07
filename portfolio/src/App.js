@@ -7,8 +7,9 @@ import Contacts from './Components/Contacts'
 function App() {
   return (
     <React.Fragment>
-      <Header as='h1'>Guligena Aierken</Header>
       <Contacts/>
+      <Header as='h1'>Guligena Aierken</Header>
+      
       
     </React.Fragment>
   );
