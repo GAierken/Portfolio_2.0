@@ -11,8 +11,7 @@ function App() {
     <React.Fragment>
       <Contacts/>
       <Header textAlign='center' className="home my name">Guligena Aierken</Header>
-      <Header textAlign='center' className="home my job title ">Full Stack Developer | Software Engineer</Header>
-      
+      <Header textAlign='center' className="home my job title ">Full Stack Developer | Software Engineer</Header> 
     </React.Fragment>
   );
 }

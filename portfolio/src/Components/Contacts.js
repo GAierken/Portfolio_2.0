@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icon } from 'semantic-ui-react'
+import Resume from '../resume.pdf'
 
  const Contacts = () => {
 
@@ -10,7 +11,7 @@ import { Icon } from 'semantic-ui-react'
             <Icon link size="big" name='github square' onClick={() => {window.location.assign('https://github.com/GAierken')}}/>
             <Icon link size="big" name='medium' onClick={() => {window.location.assign('https://medium.com/@g.aierken')}}/>
             <Icon link size="big" name='mail' onClick={() => {window.location.assign('mailto:g.aierken@gmail.com')}}/>
-            <Icon link size="big" name='file alternate' onClick={() => {console.log('download resume')}}/>
+            <Icon link size="big" name='file alternate' onClick={() => {window.open(Resume)}}/>
         </div>
         
     )
