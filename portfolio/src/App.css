@@ -1,9 +1,22 @@
 .home.my.name {
-    font-size: 8rem;
-    margin-top: 1em;
+    font-size: 5rem;
+    margin-left: 15rem;
+   
     
 }
 
 .home.my.job.title {
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-left: 15rem;
+    
+}
+
+.my.menu.list.for.route {
+    margin-top: 13em;
+    float: left;
+    
+}
+
+.ui.right.aligned.container.home {
+   float: left;
 }

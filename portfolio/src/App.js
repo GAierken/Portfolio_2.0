@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import {  Header } from 'semantic-ui-react'
+import Home from './Components/Home'
 import Contacts from './Components/Contacts'
+import Menu from './Components/Menu'
+import { GridColumn } from 'semantic-ui-react';
 
 
 
@@ -10,9 +12,14 @@ function App() {
   return (
     <React.Fragment>
       <Contacts/>
-      <Header textAlign='center' className="home my name">Guligena Aierken</Header>
-      <Header textAlign='center' className="home my job title ">Full Stack Developer | Software Engineer</Header> 
+      <GridColumn width="2">
+        <Menu/>
+        <Home/> 
+      </GridColumn>
+      
     </React.Fragment>
+
+
   );
 }
 
