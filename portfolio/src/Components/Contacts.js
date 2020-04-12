@@ -1,5 +1,5 @@
 import React from 'react'
-import { Icon } from 'semantic-ui-react'
+import { Icon, Menu } from 'semantic-ui-react'
 import Resume from '../resume.pdf'
 
  const Contacts = () => {
@@ -7,10 +7,10 @@ import Resume from '../resume.pdf'
     
     return (
         <div>
-            <Icon link size="big" name='linkedin' onClick={() => {window.location.assign('https://www.linkedin.com/in/guligena-aierken/')}}/>
-            <Icon link size="big" name='github square' onClick={() => {window.location.assign('https://github.com/GAierken')}}/>
-            <Icon link size="big" name='medium' onClick={() => {window.location.assign('https://medium.com/@g.aierken')}}/>
-            <Icon link size="big" name='mail' onClick={() => {window.location.assign('mailto:g.aierken@gmail.com')}}/>
+            <Icon link size="big" name='linkedin' onClick={() => {window.open('https://www.linkedin.com/in/guligena-aierken/')}}/>
+            <Icon link size="big" name='github square' onClick={() => {window.open('https://github.com/GAierken')}}/>
+            <Icon link size="big" name='medium' onClick={() => {window.open('https://medium.com/@g.aierken')}}/>
+            <Icon link size="big" name='mail' onClick={() => {window.open('mailto:g.aierken@gmail.com')}}/>
             <Icon link size="big" name='file alternate' onClick={() => {window.open(Resume)}}/>
         </div>
         

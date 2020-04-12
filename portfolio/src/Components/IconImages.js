@@ -6,7 +6,7 @@ const ImageExampleGroupSize = () => (
   <div>
     <Image.Group size='tiny'>
       <Image circular src='https://seeklogo.net/wp-content/uploads/2016/07/ruby-vector-logo-400x400.png' />
-      <Image circular src='https://cdn.freebiesupply.com/logos/thumbs/2x/rails-1-logo.png' />
+      <Image circular src='https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/ruby-on-rails-512.png' />
       <Image circular src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png' />
       <Image circular src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/320px-React-icon.svg.png' />
       <Image circular src='https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' />
