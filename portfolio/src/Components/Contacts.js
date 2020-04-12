@@ -1,6 +1,7 @@
 import React from 'react'
-import { Icon, Menu } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
 import Resume from '../resume.pdf'
+
 
  const Contacts = () => {
 
@@ -12,6 +13,7 @@ import Resume from '../resume.pdf'
             <Icon link size="big" name='medium' onClick={() => {window.open('https://medium.com/@g.aierken')}}/>
             <Icon link size="big" name='mail' onClick={() => {window.open('mailto:g.aierken@gmail.com')}}/>
             <Icon link size="big" name='file alternate' onClick={() => {window.open(Resume)}}/>
+            
         </div>
         
     )

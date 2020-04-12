@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Header, Container, Icon } from 'semantic-ui-react'
+import {  Header, Container } from 'semantic-ui-react'
 import IconImages from './IconImages'
 
 export default function Home() {
