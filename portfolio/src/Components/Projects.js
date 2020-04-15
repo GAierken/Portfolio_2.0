@@ -1,11 +1,12 @@
-import React from 'react'
-import { Item, ImageGroup, Image } from 'semantic-ui-react'
+import React, { useState }  from 'react'
+import { Item, ImageGroup, Image, Embed, Dimmer } from 'semantic-ui-react'
 import therappoint from './therappoint.png'
 import shop from './shop.png'
 import nyc from './nyc.png'
 
 export default function Projects() {
-    
+    const [active, setActive] = useState(false)
+    const [youtubeId, setYoutubeId] = useState('')
    let items = [
        { 
         childKey: 0,
@@ -47,12 +48,22 @@ export default function Projects() {
                     <Image src='https://www.vippng.com/png/detail/231-2318919_css-logo-png-css-black-icon-svg.png'/>
                </ImageGroup>}
    ]
-   const handleClick = () => {
-      console.log('worked')
+   const handleClick = (evt) => {
+      setActive(true)
+      console.log(evt.target.parentNode)
+   }
+
+   const handleOutSideClick = () => {
+       setActive(false)
    }
     return (
         <React.Fragment>
             <Item.Group onClick={handleClick} unstackable relaxed link divided items={items} />
+            <Dimmer active={active} onClickOutside={handleOutSideClick}>
+                <Embed 
+                   id={youtubeId}
+                />
+            </Dimmer>
         </React.Fragment>
     )
 }
