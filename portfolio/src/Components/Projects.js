@@ -11,28 +11,30 @@ export default function Projects() {
         childKey: 0,
         image: therappoint,
         header: 'Therappoint',
-        description: 'Description',
+        description: 'Tools used:',
         meta: 'Appointment scheduling app developed especially for early intervention service agencies',
-        extra: 'Extra',},
+        extra: 'Extra'},
        { 
         childKey: 1,
         image: shop,
         header: 'Flatiron Baby Shop',
-        description: 'Description',
+        description: 'Tools used:',
         meta: 'E-commerce web-app designed for baby-products',
         extra: 'Extra',},
        { 
         childKey: 2,
         image: nyc,
         header: 'NYC Museums',
-        description: 'Description',
+        description: 'Tools used:',
         meta: 'Yelp-like web-app for museums in NYC where users can find and review museums',
-        extra: 'Extra',}
+        extra: 'Extra'}
    ]
-   console.log(therappoint)
+   const handleClick = () => {
+      console.log('worked')
+   }
     return (
         <React.Fragment>
-            <Item.Group items={items}/>
+            <Item.Group onClick={handleClick} unstackable relaxed link divided items={items} />
         </React.Fragment>
     )
 }
