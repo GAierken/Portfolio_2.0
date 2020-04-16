@@ -25,8 +25,8 @@ function App() {
     
     <React.Fragment>
       <Contacts/>
-        <Label style={{position: 'absolute',
-          right: '0px'}}><Checkbox toggle onChange={handleOnChange}/>Dark mode</Label>
+        <Label size="large" style={{position: 'absolute',
+          right: '0px'}}><Checkbox slider onChange={handleOnChange}/>Dark mode</Label>
         <Menu/>
       <Switch>
         <Route path='/about'><About/></Route>
