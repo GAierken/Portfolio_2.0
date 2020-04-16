@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item, ImageGroup, Image } from 'semantic-ui-react'
+import { Item, ImageGroup, Image, Grid, GridColumn, Reveal } from 'semantic-ui-react'
 import therappoint from './therappoint.png'
 import shop from './shop.png'
 import nyc from './nyc.png'
@@ -63,7 +63,17 @@ export default function Projects() {
   
     return (
         <React.Fragment>
-            <Item.Group onClick={handleClick} unstackable relaxed link divided items={items} />
+            {/* <Item.Group onClick={handleClick} unstackable relaxed link divided items={items} /> */}
+                <GridColumn>
+                    <Image size='massive' src={therappoint} centered />
+                </GridColumn>
+                <GridColumn>
+                    <Image size='massive' src={shop} centered/>
+                </GridColumn>
+                <GridColumn>
+                    <Image size='massive' src={nyc} centered/>
+                </GridColumn>
+           
         </React.Fragment>
     )
 }
