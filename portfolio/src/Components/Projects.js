@@ -1,5 +1,5 @@
 import React, { useState }  from 'react'
-import { Item, ImageGroup, Image, Embed, Dimmer } from 'semantic-ui-react'
+import { Item, ImageGroup, Image, Embed, Dimmer, Grid, GridColumn } from 'semantic-ui-react'
 import therappoint from './therappoint.png'
 import shop from './shop.png'
 import nyc from './nyc.png'
@@ -11,7 +11,7 @@ export default function Projects() {
        { 
         childKey: 0,
         image: therappoint,
-        header: 'Therappoint',
+        header: 'Therappoint Demo',
         description: 'Tools used:',
         meta: 'Appointment scheduling app developed especially for early intervention service agencies',
         extra: <ImageGroup size='mini'>
@@ -25,7 +25,7 @@ export default function Projects() {
        { 
         childKey: 1,
         image: shop,
-        header: 'Flatiron Baby Shop',
+        header: 'Flatiron Baby Shop Demo',
         description: 'Tools used:',
         meta: 'E-commerce web-app designed for baby-products',
         extra: <ImageGroup size='mini'>
@@ -38,7 +38,7 @@ export default function Projects() {
        { 
         childKey: 2,
         image: nyc,
-        header: 'NYC Museums',
+        header: 'NYC Museums Demo',
         description: 'Tools used:',
         meta: 'Yelp-like web-app for museums in NYC where users can find and review museums',
         extra: <ImageGroup size='mini'>
@@ -50,19 +50,26 @@ export default function Projects() {
    ]
    const handleClick = (evt) => {
       setActive(true)
-      console.log(evt.target.parentNode)
+      console.log(evt.target)
    }
 
    const handleOutSideClick = () => {
        setActive(false)
+       console.log('worked')
    }
     return (
         <React.Fragment>
             <Item.Group onClick={handleClick} unstackable relaxed link divided items={items} />
             <Dimmer active={active} onClickOutside={handleOutSideClick}>
-                <Embed 
-                   id={youtubeId}
-                />
+                <Grid centered columns={2}>
+                    <GridColumn>
+                        <Embed style={{width: 420, height: 315}}
+                                id={youtubeId}
+                        />
+                    </GridColumn>
+                    
+                </Grid>
+                
             </Dimmer>
         </React.Fragment>
     )

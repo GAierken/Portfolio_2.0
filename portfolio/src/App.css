@@ -21,3 +21,8 @@
 .ui.right.aligned.container.home {
    float: left;
 }
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
