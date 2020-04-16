@@ -60,18 +60,24 @@ export default function Projects() {
      
    }
 
+   const handleMouseEnter = (evt) => {
+       console.log('enter', evt.target)
+   }
   
+   const handleMouseLeave = (evt) => {
+       console.log('leave', evt.target)
+   }
     return (
         <React.Fragment>
             {/* <Item.Group onClick={handleClick} unstackable relaxed link divided items={items} /> */}
                 <GridColumn>
-                    <Image size='massive' src={therappoint} centered />
+                    <Image onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} size='massive' src={therappoint} centered />
                 </GridColumn>
                 <GridColumn>
-                    <Image size='massive' src={shop} centered/>
+                    <Image onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} size='massive' src={shop} centered/>
                 </GridColumn>
                 <GridColumn>
-                    <Image size='massive' src={nyc} centered/>
+                    <Image onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} size='massive' src={nyc} centered/>
                 </GridColumn>
            
         </React.Fragment>
