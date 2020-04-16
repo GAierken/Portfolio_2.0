@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item, ImageGroup, Image, Embed, Dimmer, Grid, GridColumn } from 'semantic-ui-react'
+import { Item, ImageGroup, Image } from 'semantic-ui-react'
 import therappoint from './therappoint.png'
 import shop from './shop.png'
 import nyc from './nyc.png'
