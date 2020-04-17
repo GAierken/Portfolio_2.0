@@ -6,6 +6,10 @@
     
 }
 
+.home.my:hover {
+    cursor: pointer;
+}
+
 .home.my.job.title {
     font-size: 3rem;
 
