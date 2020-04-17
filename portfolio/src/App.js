@@ -25,8 +25,8 @@ function App() {
     
     <React.Fragment>
       <Contacts/>
-        <Label size="large" style={{position: 'absolute',
-          right: '0px'}}><Checkbox toggle onChange={handleOnChange}/>Night mode</Label>
+        <Label size="large" style={{position: 'absolute', top: 0,
+          right: '0px', 'font-family': "'Montserrat', sans-serif"}}><Checkbox toggle onChange={handleOnChange} />Night mode</Label>
         <Menu/>
       <Switch>
         <Route path='/about'><About/></Route>
