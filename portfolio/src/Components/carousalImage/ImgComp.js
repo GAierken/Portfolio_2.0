@@ -15,6 +15,8 @@ export default function ImgComp({ src }) {
             window.open('https://www.youtube.com/watch?v=1PeeuhozAIo&feature=youtu.be')
         }else if(evt.target.src.includes('shop')){
             window.open('https://www.youtube.com/watch?v=7cNyoHjJjiw&feature=youtu.be')
+        }else if(evt.target.src.includes('dict')){
+            window.open('https://github.com/GAierken/SlangTrans')
         }
     }
     
