@@ -14,7 +14,7 @@ export default function About() {
     }
     return (
         <React.Fragment>
-            <Grid>
+            <Grid style={{'margin-bottom': '50px'}}>
                 <Grid.Column width={7}>
                     <Image bordered spaced rounded size='large' src='https://media.vanityfair.com/photos/5ddc1e39d223c300093e7f51/master/w_2560%2Cc_limit/VF1719-Oscars-Cover-a.jpg' />
                 </Grid.Column>

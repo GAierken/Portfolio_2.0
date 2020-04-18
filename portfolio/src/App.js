@@ -3,7 +3,7 @@ import './App.css';
 import Home from './Components/Home'
 import Contacts from './Components/Contacts'
 import Menu from './Components/Menu'
-import { Checkbox, Label } from 'semantic-ui-react';
+import { Checkbox, Label, Container } from 'semantic-ui-react';
 import { Switch, Route } from "react-router-dom";
 import About from './Components/About'
 import Projects from './Components/Projects'
@@ -33,6 +33,7 @@ function App() {
         <Route path='/projects'><Projects/></Route>
         <Route path='/'><Home/></Route>
       </Switch>
+      <Container style={{'margin-top': '40px', color: 'navy', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>Created by Guligena Aierken</Container>
     </React.Fragment>
 
 
