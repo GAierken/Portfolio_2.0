@@ -1,28 +1,92 @@
-import React from 'react'
-import { Image } from 'semantic-ui-react'
+import React, {useState} from 'react'
+import { Image, Dimmer, Header, List} from 'semantic-ui-react'
 
 export default function ImgComp({ src }) {
     
-    let imgStyles = {
-        width: 100+'%',
-        height: 'auto'
-    }
+    // let imgStyles = {
+    //     width: 100+'%',
+    //     height: 'auto'
+    // }
+
+    const [active, setActive] = useState(false)
+    const [projectTitle, setProjectTitle] = useState('no info')
+    const [projectDes, setProjectDes] = useState('no info')
+    const [projectDesList, setList] = useState([])
+
+    const content = (
+        <div style={{'font-family': "'Montserrat', sans-serif"}}>
+            <Header  style={{'font-family': "'Montserrat', sans-serif"}} as='h2' inverted>{projectTitle}</Header>
+            <Header style={{'font-family': "'Montserrat', sans-serif"}} as='h4' inverted>{projectDes}</Header>
+            <List as='ol' inverted>
+              {projectDesList.map((e) => {
+                  return <List.Item as='li' value='*'>{e}</List.Item>
+              }
+              )}
+            </List>
+        </div>
+      )
+
+      
+      
     
-    const handleClick = (evt) => {
-        if(evt.target.src.includes('therappoint')){
+    const handleClick = () => {
+        if(src.includes('therappoint')){
             window.open('https://www.youtube.com/watch?v=QZEsGHZpaoo&feature=youtu.be')
-        }else if(evt.target.src.includes('nyc')){
+        }else if(src.includes('nyc')){
             window.open('https://www.youtube.com/watch?v=1PeeuhozAIo&feature=youtu.be')
-        }else if(evt.target.src.includes('shop')){
+        }else if(src.includes('shop')){
             window.open('https://www.youtube.com/watch?v=7cNyoHjJjiw&feature=youtu.be')
-        }else if(evt.target.src.includes('dict')){
-            window.open('https://github.com/GAierken/SlangTrans')
         }
     }
     
+    const handleShow = () => {
+        setActive(true)
+        if(src.includes('therappoint')){
+            setProjectTitle('Therappoint')
+            setProjectDes('Appointment scheduling app developed especially for therapy services')
+            setList([
+                'Implemented frontend with React (Redux, Thunk, Datepicker, Google Map, Geocode)',
+                'Utilized JSON Web Tokens and localStorage to store encrypted user information client-side',
+                'Styled with Semantic UI and custom CSS to refine client-side interaction and user experience',
+                'Built a Ruby on Rails API backend powered by PostgreSQL using self referential relationship'
+            ])
+        }else if(src.includes('nyc')){
+            setProjectTitle('Museums in NYC')
+            setProjectDes('Review app for museums in NYC')
+            setList([
+                'Architected frontend with Javascript using EventListener',
+                'Created improvements user interface with custom CSS and HTML',
+                'Generated backend RESTful APIs service with ROR and SQL for database management',
+                'Utilized color palette to improve UX design'
+            ])
+        }else if(src.includes('shop')){
+            setProjectTitle('Flatiron Baby Shopping')
+            setProjectDes('E-commerce web-app designed for baby-products')
+            setList([
+                'Developed a React frontend and maintain user state utilizing JWT and localStorage between logins',
+                'Created customized layout and styling using CSS and HTML',
+                'Designed ROR framework to persist data in backend using SQL'
+            ])
+        }
+    }
+
+    const handleHide = () => {
+        setActive(false)
+    }
+    
+    
     return (
         <React.Fragment>
-            <Image className='projects carousel' onClick={handleClick} src={src} alt='slide-img' style={imgStyles}/>
+            <Dimmer.Dimmable
+            
+                as={Image}
+                dimmed={active}
+                dimmer={{ active, content }}
+                onMouseEnter={handleShow}
+                onMouseLeave={handleHide}
+                src={src}
+                onClick = {handleClick}
+            />
         </React.Fragment>
     )
 }
