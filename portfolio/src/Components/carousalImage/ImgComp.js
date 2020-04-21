@@ -3,20 +3,20 @@ import { Image, Dimmer, Header, List} from 'semantic-ui-react'
 
 export default function ImgComp({ src }) {
     
-    // let imgStyles = {
-    //     width: 100+'%',
-    //     height: 'auto'
-    // }
+    const textStyle = {
+        'font-family': "'Montserrat', sans-serif"
+    }
 
     const [active, setActive] = useState(false)
     const [projectTitle, setProjectTitle] = useState('no info')
     const [projectDes, setProjectDes] = useState('no info')
     const [projectDesList, setList] = useState([])
 
+
     const content = (
-        <div style={{'font-family': "'Montserrat', sans-serif"}}>
-            <Header  style={{'font-family': "'Montserrat', sans-serif"}} as='h2' inverted>{projectTitle}</Header>
-            <Header style={{'font-family': "'Montserrat', sans-serif"}} as='h4' inverted>{projectDes}</Header>
+        <div style={textStyle}>
+            <Header style={textStyle} as='h2' inverted>{projectTitle}</Header>
+            <Header style={textStyle} as='h4' inverted>{projectDes}</Header>
             <List as='ol' inverted>
               {projectDesList.map((e) => {
                   return <List.Item as='li' value='*'>{e}</List.Item>
@@ -42,7 +42,7 @@ export default function ImgComp({ src }) {
     const handleShow = () => {
         setActive(true)
         if(src.includes('therappoint')){
-            setProjectTitle('Therappoint')
+            setProjectTitle('Therappoint Demo')
             setProjectDes('Appointment scheduling app developed especially for therapy services')
             setList([
                 'Implemented frontend with React (Redux, Thunk, Datepicker, Google Map, Geocode)',
@@ -51,7 +51,7 @@ export default function ImgComp({ src }) {
                 'Built a Ruby on Rails API backend powered by PostgreSQL using self referential relationship'
             ])
         }else if(src.includes('nyc')){
-            setProjectTitle('Museums in NYC')
+            setProjectTitle('Museums in NYC Demo')
             setProjectDes('Review app for museums in NYC')
             setList([
                 'Architected frontend with Javascript using EventListener',
@@ -60,7 +60,7 @@ export default function ImgComp({ src }) {
                 'Utilized color palette to improve UX design'
             ])
         }else if(src.includes('shop')){
-            setProjectTitle('Flatiron Baby Shopping')
+            setProjectTitle('Flatiron Baby Shopping Demo')
             setProjectDes('E-commerce web-app designed for baby-products')
             setList([
                 'Developed a React frontend and maintain user state utilizing JWT and localStorage between logins',
@@ -78,7 +78,6 @@ export default function ImgComp({ src }) {
     return (
         <React.Fragment>
             <Dimmer.Dimmable
-            
                 as={Image}
                 dimmed={active}
                 dimmer={{ active, content }}
