@@ -3,7 +3,7 @@ import './slider.scss'
 import shop from '../shop.png'
 import nyc from '../nyc.png'
 import therappoint from '../therappoint.png'
-import dict from '../dict.png'
+// import dict from '../dict.png'
 import ImgComp from './ImgComp'
 import { Icon } from 'semantic-ui-react'
 
@@ -12,10 +12,10 @@ import { Icon } from 'semantic-ui-react'
 export default function Slider() {
     
     let sliderArr = [
-        <ImgComp src={therappoint}/>,
+        <ImgComp src={therappoint} />,
         <ImgComp src={nyc}/>,
         <ImgComp src={shop}/>,
-        <ImgComp src={dict}/>
+        // <ImgComp src={dict}/>
     ]
 
     const [x, setX] = useState(0)
