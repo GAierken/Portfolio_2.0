@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Image, Dimmer, Header, List} from 'semantic-ui-react'
+import { Image, Dimmer, Header, List, ItemHeader} from 'semantic-ui-react'
 
 export default function ImgComp({ src }) {
     
@@ -15,7 +15,7 @@ export default function ImgComp({ src }) {
 
     const content = (
         <div style={textStyle}>
-            <Header style={textStyle} as='h2' inverted>{projectTitle}</Header>
+            <ItemHeader as='a'  style={{'font-family': "'Montserrat', sans-serif", 'font-size': '22px'}}  inverted>{projectTitle}</ItemHeader>
             <Header style={textStyle} as='h4' inverted>{projectDes}</Header>
             <List as='ol' inverted>
               {projectDesList.map((e) => {
@@ -42,7 +42,7 @@ export default function ImgComp({ src }) {
     const handleShow = () => {
         setActive(true)
         if(src.includes('therappoint')){
-            setProjectTitle('Therappoint Demo')
+            setProjectTitle('Click to watch Therappoint Demo')
             setProjectDes('Appointment scheduling app developed especially for therapy services')
             setList([
                 'Implemented frontend with React (Redux, Thunk, Datepicker, Google Map, Geocode)',
@@ -51,7 +51,7 @@ export default function ImgComp({ src }) {
                 'Built a Ruby on Rails API backend powered by PostgreSQL using self referential relationship'
             ])
         }else if(src.includes('nyc')){
-            setProjectTitle('Museums in NYC Demo')
+            setProjectTitle('Click to watch Museums in NYC Demo')
             setProjectDes('Review app for museums in NYC')
             setList([
                 'Architected frontend with Javascript using EventListener',
@@ -60,7 +60,7 @@ export default function ImgComp({ src }) {
                 'Utilized color palette to improve UX design'
             ])
         }else if(src.includes('shop')){
-            setProjectTitle('Flatiron Baby Shopping Demo')
+            setProjectTitle('Click to watch Flatiron Baby Shopping Demo')
             setProjectDes('E-commerce web-app designed for baby-products')
             setList([
                 'Developed a React frontend and maintain user state utilizing JWT and localStorage between logins',
