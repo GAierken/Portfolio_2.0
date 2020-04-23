@@ -42,7 +42,7 @@ export default function ImgComp({ src }) {
     const handleShow = () => {
         setActive(true)
         if(src.includes('therappoint')){
-            setProjectTitle('Click to watch Therappoint Demo')
+            setProjectTitle('Click here to watch Therappoint Demo')
             setProjectDes('Appointment scheduling app developed especially for therapy services')
             setList([
                 'Implemented frontend with React (Redux, Thunk, Datepicker, Google Map, Geocode)',
@@ -51,7 +51,7 @@ export default function ImgComp({ src }) {
                 'Built a Ruby on Rails API backend powered by PostgreSQL using self referential relationship'
             ])
         }else if(src.includes('nyc')){
-            setProjectTitle('Click to watch Museums in NYC Demo')
+            setProjectTitle('Click here to watch Museums in NYC Demo')
             setProjectDes('Review app for museums in NYC')
             setList([
                 'Architected frontend with Javascript using EventListener',
@@ -60,12 +60,12 @@ export default function ImgComp({ src }) {
                 'Utilized color palette to improve UX design'
             ])
         }else if(src.includes('shop')){
-            setProjectTitle('Click to watch Flatiron Baby Shopping Demo')
+            setProjectTitle('Click here to watch Flatiron Baby Shopping Demo')
             setProjectDes('E-commerce web-app designed for baby-products')
             setList([
                 'Developed a React frontend and maintain user state utilizing JWT and localStorage between logins',
                 'Created customized layout and styling using CSS and HTML',
-                'Designed ROR framework to persist data in backend using SQL'
+                'Designed ROR framework to persist data in backend using PostgreSQL'
             ])
         }
     }

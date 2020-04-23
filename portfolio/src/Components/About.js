@@ -21,8 +21,7 @@ export default function About() {
                     <Image rounded style={{'left': '20px', 'margin-top': '20'}} size='medium' src={Profile} />
                 </Grid.Column>
                 <Grid.Column width={9}>
-                    <Container style={containerStyles} fluid>I'm a full stack web developer, proficient with Ruby on Rails, Javascript and React/Redux. Utilizing my technical skills and experience to create innovative web applications excites me. My willingness to learn and adapt prepares me for the fast-paced, ever-changing environment. Collaborative work with fellow developers inspires me to broaden insight. Currently I'm looking for a position, where I can use my abilities to make a substantial impact on webapp improvement. </Container>
-                    <Container style={containerStyles} fluid>When I'm not coding, you can find me playdoughing with my twins. </Container>
+                    <Container style={containerStyles} fluid>I'm a full stack web developer, proficient with Ruby on Rails, Javascript and React/Redux and I’m currently  learning Python. Utilizing my technical skills and experience to create innovative web applications excites me. As a devotee of programming, I’m focused and detail-oriented, which allows me to accomplish a task efficiently and precisely. My willingness to learn and adapt, prepares me for the fast-paced, ever-changing environment. To hit the ground running, I’m adept at picking up languages and frameworks. Collaborative work with fellow developers inspires me to broaden insight. I’m a committed team player skilled at empowering teams and helping businesses be creative. </Container>
                     
                 </Grid.Column>
                 
