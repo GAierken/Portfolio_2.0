@@ -33,7 +33,7 @@ function App() {
         <Route path='/projects'><Projects/></Route>
         <Route path='/'><Home/></Route>
       </Switch>
-      <Container style={{'bottom': '0', color: 'navy', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>Created by Guligena Aierken</Container>
+      <Container style={{'bottom': '0', color: 'navy', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>© All rights reserved.</Container>
     </React.Fragment>
 
 
