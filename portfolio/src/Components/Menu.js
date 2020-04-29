@@ -20,7 +20,7 @@ export default  function MenuList()  {
     }
     return (
       
-      <Menu color="blue" borderless onItemClick={ handleClick } style={{'margin-top': '50px', 'font-family': "'Montserrat', sans-serif"}}
+      <Menu  stackable  color="blue" borderless onItemClick={ handleClick } style={{'margin-top': '50px', 'font-family': "'Montserrat', sans-serif"}}
           items={[
             { key: 'l1', name: 'link-1', content: 'Home' },
             { key: 'l2', name: 'link-2', content: 'About Me' },
