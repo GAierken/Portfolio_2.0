@@ -3,14 +3,14 @@ import './App.css';
 import Home from './Components/Home'
 import Contacts from './Components/Contacts'
 import Menu from './Components/Menu'
-import { Checkbox, Label, Container } from 'semantic-ui-react';
+import { Checkbox, Label, Container, Icon } from 'semantic-ui-react';
 import { Switch, Route } from "react-router-dom";
 import About from './Components/About'
 import Projects from './Components/Projects'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
-  
+  const [menuShow, setMenuShow] = useState(false)
   const handleOnChange = () => {
       setDarkMode(!darkMode)
       changeBackground()
@@ -21,13 +21,23 @@ function App() {
       element.classList.toggle("dark-mode")
   }
  
+  const handleMouseEnter = () => {
+    setMenuShow(true)
+    
+  }
+
+  const handleMouseLeave = () => {
+     setMenuShow(false)
+  }
+  
+  
   return (
     
     <React.Fragment>
       <Contacts/>
-        <Label size="large" style={{position: 'absolute', top: 0,
-          right: '0px', 'font-family': "'Montserrat', sans-serif"}}><Checkbox toggle onChange={handleOnChange} />Night mode</Label>
-        <Menu/>
+        <Checkbox style={{position: 'absolute', top: '20px',
+          right: '40px'}}toggle onChange={handleOnChange} />
+       <Menu/>
       <Switch>
         <Route path='/about'><About/></Route>
         <Route path='/projects'><Projects/></Route>
