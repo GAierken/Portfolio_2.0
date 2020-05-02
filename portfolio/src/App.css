@@ -61,4 +61,14 @@
 
 
 
-  
+.indicating.scroll.down.icon {
+      opacity: 0.5;
+      animation-name: iconShow;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+}
+
+@keyframes iconShow {
+    from{opacity: 0.5;}
+    tp{opacity: 1;}
+}
