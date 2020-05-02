@@ -1,9 +1,17 @@
 .home.my.name {
-    margin-top: 100px;
+    margin-top: -50px;
     font-size: 5rem;
     font-family: 'Spartan', sans-serif;
-   
+    animation-name: nameAni;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     
+    
+}
+@keyframes nameAni  {
+ from{margin-top: -200px}
+ to{margin-top: 100px}
 }
 
 .home.my:hover {
@@ -12,7 +20,6 @@
 
 .home.my.job.title {
     font-size: 3rem;
-
     
 }
 

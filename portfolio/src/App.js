@@ -3,14 +3,14 @@ import './App.css';
 import Home from './Components/Home'
 import Contacts from './Components/Contacts'
 import Menu from './Components/Menu'
-import { Checkbox, Label, Container, Icon } from 'semantic-ui-react';
+import { Checkbox, Container } from 'semantic-ui-react';
 import { Switch, Route } from "react-router-dom";
 import About from './Components/About'
 import Projects from './Components/Projects'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
-  const [menuShow, setMenuShow] = useState(false)
+
   const handleOnChange = () => {
       setDarkMode(!darkMode)
       changeBackground()
@@ -21,15 +21,7 @@ function App() {
       element.classList.toggle("dark-mode")
   }
  
-  const handleMouseEnter = () => {
-    setMenuShow(true)
-    
-  }
 
-  const handleMouseLeave = () => {
-     setMenuShow(false)
-  }
-  
   
   return (
     
