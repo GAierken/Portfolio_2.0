@@ -1,0 +1,25 @@
+.my.portfolio.headshot {
+    left: -50px;
+    animation-name: leftIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes leftIn {
+    from{left: -150px;}
+    to{left: 20px}
+}
+
+.my.about.content.for.animation.purpose {
+    right: -1000px;
+    animation-name: rightIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes rightIn {
+    from{right: -1000px}
+    to{right: 50px}
+}

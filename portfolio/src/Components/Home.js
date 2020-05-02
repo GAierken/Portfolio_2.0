@@ -1,5 +1,5 @@
 import React from 'react'
-import {  Header, Container, Icon } from 'semantic-ui-react'
+import {  Header, Container } from 'semantic-ui-react'
 
 
 
@@ -45,11 +45,11 @@ export default function Home() {
   return (
       
         <React.Fragment>
-          <Container style={{'margin-bottom': '300px', 'margin-top': '150px'}}className="home">
+          <Container style={{'margin-bottom': '200px', 'margin-top': '150px'}}className="home">
             <Header  onMouseOver={handleNameMouseOver} textAlign='center' className="home my name">Guligena Aierken</Header>
             <Header  onMouseOver={handleTitleMouseOver} textAlign='center' className="home my job title ">Full Stack Web Developer | Software Engineer</Header>
           </Container> 
-          <Icon name='angle double down' size='huge'/>
+          
           
         </React.Fragment>
     )
