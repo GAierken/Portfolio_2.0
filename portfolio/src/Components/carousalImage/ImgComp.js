@@ -3,9 +3,9 @@ import { Image, Dimmer, Header, List, ItemHeader} from 'semantic-ui-react'
 
 export default function ImgComp({ src }) {
     
-    const textStyle = {
-        'font-family': "'Montserrat', sans-serif"
-    }
+        const textStyle = {
+            'font-family': "'Montserrat', sans-serif"
+        }
 
     const [active, setActive] = useState(false)
     const [projectTitle, setProjectTitle] = useState('no info')
