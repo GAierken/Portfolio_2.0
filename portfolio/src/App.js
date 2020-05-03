@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './App.css';
 import Home from './Components/Home'
 import Contacts from './Components/Contacts'
-import Menu from './Components/Menu'
 import { Checkbox, Container, Icon } from 'semantic-ui-react';
 import { Switch, Route } from "react-router-dom";
 import About from './Components/About'
@@ -31,10 +30,6 @@ function App() {
   return (
     
     <React.Fragment>
-      {/* <Contacts/> */}
-        {/* <Checkbox style={{position: 'absolute', top: '20px',
-          right: '40px'}} toggle onChange={handleOnChange} /> */}
-       {/* <Menu/> */}
        
       <Icon name='bars' size='big' link color='blue' style={{right: '200px'}} 
          onClick={() => {

@@ -9,6 +9,7 @@ export default function Home() {
  
   const [selectedLanguage, setSelectedLanguage] = useState('')
   const [dropdownText, setDropdownText] = useState('Select Language')
+  const welcomeLang = "Welcome to my website!"
   
   const languageOptions = [
     {key: 'Uyghur', text: 'Uyghur', value: 'Uyghur'},
@@ -51,7 +52,25 @@ export default function Home() {
         break;
     }
   }
+
+  const changeWelcomeLang = () => {
+      switch (selectedLanguage) {
+        case 'Uyghur':
+           return 'تور بېتىمگە خۇش كەپسىز'
+        case 'Chinese':
+           return '欢迎来到我的主页'
+        case 'German': 
+           return 'HERZLICH WILLKOMMEN AUF MEINER WEBSITE'
+        case 'English':
+           return 'Welcome to my website'
+        default:
+         break
+      }
+  }
+  
+  
   return (
+    
       
         <React.Fragment>
 
@@ -71,7 +90,7 @@ export default function Home() {
               text={dropdownText}
               value={selectedLanguage}
                       />
-            <Header>Welcome to my website!</Header>
+            <Header textAlign='center'>{selectedLanguage === ''? welcomeLang : changeWelcomeLang()}</Header>
             <Header  onMouseOver={handleNameMouseOver} textAlign='center' className="home my name">Guligena Aierken</Header>
             <Header  onMouseOver={handleTitleMouseOver} textAlign='center' className="home my job title ">Full Stack Web Developer | Software Engineer</Header>
           </Container> 
