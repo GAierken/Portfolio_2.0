@@ -1,5 +1,5 @@
-import React from 'react'
-import {  Header, Container } from 'semantic-ui-react'
+import React, {useState} from 'react'
+import {  Header, Container, Dropdown } from 'semantic-ui-react'
 
 
 
@@ -7,7 +7,16 @@ import {  Header, Container } from 'semantic-ui-react'
 export default function Home() {
   
  
+  const [selectedLanguage, setSelectedLanguage] = useState('')
+  const [dropdownText, setDropdownText] = useState('Select Language')
   
+  const languageOptions = [
+    {key: 'Uyghur', text: 'Uyghur', value: 'Uyghur'},
+    { key: 'Chinese', text: 'Chinese', value: 'Chinese' },
+    { key: 'English', text: 'English', value: 'English' },
+    { key: 'German', text: 'German', value: 'German' }
+
+  ]
   
   const handleNameMouseOver = (evt) => {
     switch (evt.target.innerHTML) {
@@ -45,7 +54,24 @@ export default function Home() {
   return (
       
         <React.Fragment>
-          <Container style={{'margin-bottom': '200px', 'margin-top': '150px'}}className="home">
+
+          <Container className="home">
+            <Dropdown
+              onChange={(evt) => {
+                setSelectedLanguage(evt.target.childNodes[0].innerHTML)
+                setDropdownText(evt.target.childNodes[0].innerHTML)
+              }
+              }
+              button
+              className='icon'
+              floating
+              labeled
+              icon='world'
+              options={languageOptions}
+              text={dropdownText}
+              value={selectedLanguage}
+                      />
+            <Header>Welcome to my website!</Header>
             <Header  onMouseOver={handleNameMouseOver} textAlign='center' className="home my name">Guligena Aierken</Header>
             <Header  onMouseOver={handleTitleMouseOver} textAlign='center' className="home my job title ">Full Stack Web Developer | Software Engineer</Header>
           </Container> 
