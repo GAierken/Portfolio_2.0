@@ -4,9 +4,10 @@ import {Sidebar, Menu, Icon} from 'semantic-ui-react'
 
 export default function MenuSidebar(props) {
     let history = useHistory()
-    
+   
     const handleClick = (evt) => {
-      console.log(evt.target.dataset.id)
+        props.menuItemClicked()
+      
         if(evt.target.dataset.id === '1'){
           history.push('/')
         }else if(evt.target.dataset.id === '2'){

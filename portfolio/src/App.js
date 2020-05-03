@@ -23,6 +23,9 @@ function App() {
       element.classList.toggle("dark-mode")
   }
  
+  const sidebarMenuClicked = () => {
+       setSidebarVisi(false)
+  }
 
   
   return (
@@ -40,7 +43,7 @@ function App() {
          }
       
       />
-      <Sidebar visible={sidebarVisi}/>
+      <Sidebar visible={sidebarVisi} menuItemClicked={sidebarMenuClicked}/>
       <Switch>
         <Route path='/about'><About/></Route>
         <Route path='/projects'><Projects/></Route>
