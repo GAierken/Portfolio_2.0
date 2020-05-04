@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Home from './Components/Home'
 import Contacts from './Components/Contacts'
-import { Checkbox, Container, Icon, Divider } from 'semantic-ui-react';
+import { Checkbox, Container, Icon, Divider, GridRow } from 'semantic-ui-react';
 import { Switch, Route } from "react-router-dom";
 import About from './Components/About'
 import Projects from './Components/Projects'
@@ -45,8 +45,16 @@ function App() {
         <Route path='/contacts'><Contacts/></Route>
         <Route path='/'><Home/></Route>
       </Switch>
+     
+
+    
       <Divider/>
+        <GridRow ><Icon name='chevron circle up' size='big' inverted/></GridRow>
+        <GridRow ><Icon name='chevron circle down' size='big' inverted/></GridRow>
       <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>© All rights reserved.</Container>
+   
+       
+     
     </React.Fragment>
 
 
