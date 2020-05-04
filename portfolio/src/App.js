@@ -31,7 +31,7 @@ function App() {
     
     <React.Fragment>
        
-      <Icon name='bars' size='big' link color='blue' style={{right: '200px'}} 
+      <Icon bordered name='bars' size='big' link color='blue' style={{right: '200px'}} 
          onClick={() => {
            setSidebarVisi(!sidebarVisi)
          }
@@ -45,7 +45,7 @@ function App() {
         <Route path='/contacts'><Contacts/></Route>
         <Route path='/'><Home/></Route>
       </Switch>
-      <Container style={{position: 'fixed', 'bottom': '0', color: 'navy', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>© All rights reserved.</Container>
+      <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>© All rights reserved.</Container>
     </React.Fragment>
 
 

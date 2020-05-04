@@ -6,6 +6,7 @@
     animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    color: papayawhip;
     
     
 }
@@ -20,6 +21,7 @@
 
 .home.my.job.title {
     font-size: 3rem;
+    color: papayawhip;
     
 }
 

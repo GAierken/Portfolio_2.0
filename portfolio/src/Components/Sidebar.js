@@ -23,13 +23,13 @@ export default function MenuSidebar(props) {
         <Sidebar
         as={Menu}
         color='blue'
-        animation='overlay'
+        animation='scale down'
         icon='labeled'
         inverted
         vertical
         visible={props.visible}
-        width='very thin'
-        direction='bottom'
+        width='thin'
+        direction='right'
       >
         <Menu.Item data-id='1' as='a' onClick={handleClick}>
           <Icon name='home' />

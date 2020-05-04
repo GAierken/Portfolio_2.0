@@ -11,7 +11,8 @@ export default function About() {
         'margin-bottom': '40px',
         'letter-spacing': '-.008em',
         'line-height': '200%',
-        'margin-top': '40px'
+        'margin-top': '40px',
+        'color': 'white'
     }
     return (
         <React.Fragment>
