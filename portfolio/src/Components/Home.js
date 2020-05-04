@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
-import {  Header, Container, Dropdown } from 'semantic-ui-react'
-
+import {  Header, Dropdown, Image, Segment, Divider } from 'semantic-ui-react'
+import About from './About'
+import Projects from './Projects'
+import Contacts from './Contacts'
 
 
 
@@ -9,6 +11,7 @@ export default function Home() {
  
   const [selectedLanguage, setSelectedLanguage] = useState('')
   const [dropdownText, setDropdownText] = useState('Select Language')
+  const [sidebarVisi, setSidebarVisi] = useState(false)
   const welcomeLang = "Welcome to my website!"
   
   const languageOptions = [
@@ -73,9 +76,15 @@ export default function Home() {
     
       
         <React.Fragment>
-
-          <Container className="home">
             <Dropdown
+              style={{
+                position: 'absolute',
+                top: '10px',
+                right: '16px',
+                'background-color': '#89cff0',
+                'font-family': "'Montserrat', sans-serif",
+                color: 'white'
+                }}
               onChange={(evt) => {
                 setSelectedLanguage(evt.target.childNodes[0].innerHTML)
                 setDropdownText(evt.target.childNodes[0].innerHTML)
@@ -83,18 +92,36 @@ export default function Home() {
               }
               button
               className='icon'
-              floating
               labeled
               icon='world'
               options={languageOptions}
               text={dropdownText}
               value={selectedLanguage}
                       />
-            <Header textAlign='center'>{selectedLanguage === ''? welcomeLang : changeWelcomeLang()}</Header>
-            <Header  onMouseOver={handleNameMouseOver} textAlign='center' className="home my name">Guligena Aierken</Header>
-            <Header  onMouseOver={handleTitleMouseOver} textAlign='center' className="home my job title ">Full Stack Web Developer | Software Engineer</Header>
-          </Container> 
-          
+            <Image style={{width: '1280px', height:'400px', 'object-fit': 'cover', position: 'relative', 'margin-top': '40px'}}src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
+         
+            <Segment basic style={{'background-color': '#00468b'}}>
+                <Header  onMouseOver={handleNameMouseOver} textAlign='center' className="home my name">{selectedLanguage === ''? welcomeLang : changeWelcomeLang()}</Header>
+                <Header  onMouseOver={handleTitleMouseOver} textAlign='center' className="home my job title ">Full Stack Web Developer | Software Engineer</Header>
+            </Segment>
+
+            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}>About Me</Header></Divider>
+
+            <Segment basic style={{'background-color': '#00468b'}}>
+                <About/>
+            </Segment>
+
+            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}>My Projects</Header></Divider>
+            <Segment basic style={{'background-color': '#00468b'}}>
+                <Projects/>
+            </Segment>
+
+            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}>Stay Connected</Header></Divider>
+            <Segment  basic textAlign='center' style={{'background-color': '#00468b'}} >
+                <Contacts/>
+            </Segment>
+           
+           
           
         </React.Fragment>
     )
