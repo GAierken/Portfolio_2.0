@@ -98,7 +98,7 @@ export default function Home() {
               text={dropdownText}
               value={selectedLanguage}
                       />
-            <Image style={{width: '1280px', height:'400px', 'object-fit': 'cover', position: 'relative', 'margin-top': '40px'}}src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
+            <Image style={{width: '1280px', height:'500px', 'object-fit': 'cover', position: 'relative', 'margin-top': '40px'}}src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
          
             <Segment basic style={{'background-color': '#00468b'}}>
                 <Header  onMouseOver={handleNameMouseOver} textAlign='center' className="home my name">{selectedLanguage === ''? welcomeLang : changeWelcomeLang()}</Header>
