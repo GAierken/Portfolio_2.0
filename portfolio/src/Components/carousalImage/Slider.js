@@ -30,7 +30,8 @@ export default function Slider() {
     
     
     return (
-        <div className='slider'>
+        <div className='slider' style={{'margin-left': 'auto',
+            'margin-right': 'auto', marginTop: '50px', marginBottom: '50px'}}>
             {
                 sliderArr.map((e, index) => {
                     return (

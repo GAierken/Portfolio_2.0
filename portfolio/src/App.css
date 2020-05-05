@@ -1,18 +1,19 @@
 .home.my.name {
     margin-top: -50px;
-    font-size: 5rem;
+    font-size: 2rem;
     font-family: 'Spartan', sans-serif;
     animation-name: nameAni;
     animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     color: papayawhip;
+    margin-bottom: 40px;
     
     
 }
 @keyframes nameAni  {
  from{margin-top: -200px}
- to{margin-top: 100px}
+ to{margin-top: 35px}
 }
 
 .home.my:hover {
