@@ -28,7 +28,6 @@ function App() {
        setSidebarVisi(false)
   }
 
-  console.log(window.pageYOffset)
   
   
   return (
