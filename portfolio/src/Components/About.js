@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Image, Container, Segment } from 'semantic-ui-react'
+import {Container, Segment, Table, Tab } from 'semantic-ui-react'
 import Profile from './profile.jpg'
 import './About.css'
 
@@ -18,12 +18,28 @@ export default function About() {
     return (
         <React.Fragment>
            
-              <Segment.Group raised style={{'background-color': '#00468b'}}>
-                <Segment textAlign='center' basic >
-                  <Image className="my portfolio headshot"  centered size='medium' src={Profile} style={{'border-radius': '50%', 'object-fit': 'cover'}}/>
+              <Segment.Group  style={{'background-color': '#00468b'}}>
+                <Segment textAlign='center'  basic >
+                  <Table color='blue' inverted padded="very" size="large">
+                    <Table.Header>
+                      <Table.Row>
+                        <Table.HeaderCell>Technical Skills</Table.HeaderCell>
+                      </Table.Row>
+                    </Table.Header>
+                    <Table.Body>
+                      <Table.Row>
+                        <Table.Cell>
+                          Ruby, Sinatra, Ruby on Rails, SQL, PostgreSQL, JavaScript, React, Redux, HTML, CSS, RESTful API, Security and Token management (JWT), bcrypt, Git & Github, Object-oriented programming, functional programming
+                        </Table.Cell>
+                      </Table.Row>
+                    </Table.Body>
+                  </Table>
                 </Segment>
                 <Segment basic textAlign='center' >
-                  <Container textAlign="left" className="my about content for animation purpose" style={containerStyles} >I'm a full stack web developer, proficient with Ruby on Rails, Javascript and React/Redux and I’m currently  learning Python. Utilizing my technical skills and experience to create innovative web applications excites me. As a devotee of programming, I’m focused and detail-oriented, which allows me to accomplish a task efficiently and precisely. My willingness to learn and adapt, prepares me for the fast-paced, ever-changing environment. To hit the ground running, I’m adept at picking up languages and frameworks. Collaborative work with fellow developers inspires me to broaden insight. I’m a committed team player skilled at empowering teams and helping businesses be creative. </Container>   
+                  <Container textAlign="left" className="my about content for animation purpose" style={containerStyles} >Hello world! Welcome to my programming website, I’m Guligena, a full stack web developer. Utilizing my technical skills and experience to create user friendly and innovative web applications is my expertise. My linguist background helps me to learn programming languages and frameworks quickly and apply code in a focused and detail-oriented way, which allows me to accomplish tasks efficiently and precisely. Having lived in Asia, Europe and North America, I’m always willing to learn and adapt, which prepares me for the fast-paced, ever-changing environment. As a committed team player, I encourage open communication and positive reinforcement.</Container>
+
+                    <Container textAlign="left" style={containerStyles}>Outside of business hours, you’ll find me creating fun arts with my twins and cooking different cuisines.
+                      </Container>   
                 </Segment>
               </Segment.Group>  
                
