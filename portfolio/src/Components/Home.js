@@ -3,7 +3,7 @@ import {  Header, Dropdown, Image, Segment, Divider } from 'semantic-ui-react'
 import About from './About'
 import Projects from './Projects'
 import Contacts from './Contacts'
-
+import {Frame} from 'framer'
 
 
 export default function Home() {
@@ -67,7 +67,8 @@ export default function Home() {
         case 'English':
            return '“Make it work, make it right, make it fast.” – Kent Beck'
         default:
-         break
+           return '“Make it work, make it right, make it fast.” – Kent Beck'
+       
       }
   }
   
@@ -100,7 +101,9 @@ export default function Home() {
                       />
            <Segment.Group textAlign='center'>
             <Segment basic style={{'background-color': '#00468b'}}>
-                <Header textAlign='center' className="home my name">{selectedLanguage === ''? welcomeLang : changeWelcomeLang()}</Header>
+              
+              <Header textAlign='center' className="home my name">{selectedLanguage === ''? welcomeLang : changeWelcomeLang()}</Header>
+              
             </Segment>
 
             <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}>About Me</Header></Divider>
