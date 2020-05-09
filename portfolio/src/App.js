@@ -52,8 +52,15 @@ function App() {
 
     
       <Divider/>
-        <GridRow ><Icon name='chevron circle up' size='big' inverted/></GridRow>
-        <GridRow ><Icon name='chevron circle down' size='big' inverted/></GridRow>
+        <GridRow ><Icon name='chevron circle up' size='big' inverted onClick={()=> {
+          window.scrollTo(
+            {
+              top: 0,
+              behavior: 'smooth'
+            }
+          )
+        }}/></GridRow>
+       
       <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>© All rights reserved.</Container>
    
        
