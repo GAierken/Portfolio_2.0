@@ -71,3 +71,7 @@
     from{opacity: 0.5;}
     tp{opacity: 1;}
 }
+
+.scroll.to.top.button:hover{
+    color: lightskyblue;
+}

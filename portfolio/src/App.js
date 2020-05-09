@@ -33,7 +33,7 @@ function App() {
   return (
     
     <React.Fragment>
-     <Image style={{width: '1280px', height:'550px', 'object-fit': 'cover', position: 'relative'}}src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
+     <Image style={{width: '1280px', height:'550px', 'object-fit': 'cover', position: 'relative'}} src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
       <Icon bordered name='bars' size='big' link color='blue' style={{top:0, position: 'absolute'}} 
          onClick={() => {
            setSidebarVisi(!sidebarVisi)
@@ -43,18 +43,27 @@ function App() {
       />
       <Sidebar visible={sidebarVisi} menuItemClicked={sidebarMenuClicked}/>
       <Switch>
-        <Route path='/about'><About/></Route>
+        {/* <Route path='/about'><About/></Route>
         <Route path='/projects'><Projects/></Route>
-        <Route path='/contacts'><Contacts/></Route>
+        <Route path='/contacts'><Contacts/></Route> */}
         <Route path='/'><Home/></Route>
       </Switch>
      
 
     
       <Divider/>
-        <GridRow ><Icon name='chevron circle up' size='big' inverted/></GridRow>
-        <GridRow ><Icon name='chevron circle down' size='big' inverted/></GridRow>
-      <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>© All rights reserved.</Container>
+        <GridRow ><Icon className="scroll to top button" name='chevron circle up' size='big' inverted 
+          
+          onClick={()=> {
+          window.scrollTo(
+            {
+              top: 0,
+              behavior: 'smooth'
+            }
+          )
+        }}/></GridRow>
+       
+      <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>Made with ❤️ by Guligena Aierken © All rights reserved.</Container>
    
        
      

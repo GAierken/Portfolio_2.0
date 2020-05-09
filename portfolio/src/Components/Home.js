@@ -106,18 +106,18 @@ export default function Home() {
               
             </Segment>
 
-            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}>About Me</Header></Divider>
+            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>About Me</Header></Divider>
 
-            <Segment basic style={{'background-color': '#00468b'}}>
+            <Segment basic style={{'background-color': '#00468b', 'margin': '40px'}}>
                 <About/>
             </Segment>
 
-            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}>My Projects</Header></Divider>
-            <Segment textAlign='center' basic style={{'background-color': '#00468b'}}>
+            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>My Projects</Header></Divider>
+            <Segment textAlign='center' basic style={{'background-color': '#00468b', 'margin': '40px'}}>
                 <Projects/>
             </Segment>
 
-            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}>Stay Connected</Header></Divider>
+            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}>Stay In Touch</Header></Divider>
             <Segment  basic textAlign='center' style={{'background-color': '#00468b'}} >
                 <Contacts/>
             </Segment>
