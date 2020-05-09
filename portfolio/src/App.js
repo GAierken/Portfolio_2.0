@@ -33,7 +33,7 @@ function App() {
   return (
     
     <React.Fragment>
-     <Image style={{width: '1280px', height:'550px', 'object-fit': 'cover', position: 'relative'}}src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
+     <Image style={{width: '1280px', height:'550px', 'object-fit': 'cover', position: 'relative'}} src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
       <Icon bordered name='bars' size='big' link color='blue' style={{top:0, position: 'absolute'}} 
          onClick={() => {
            setSidebarVisi(!sidebarVisi)
@@ -52,7 +52,9 @@ function App() {
 
     
       <Divider/>
-        <GridRow ><Icon name='chevron circle up' size='big' inverted onClick={()=> {
+        <GridRow ><Icon className="scroll to top button" name='chevron circle up' size='big' inverted 
+          
+          onClick={()=> {
           window.scrollTo(
             {
               top: 0,
@@ -61,7 +63,7 @@ function App() {
           )
         }}/></GridRow>
        
-      <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>© All rights reserved.</Container>
+      <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>Made with ❤️ by Guligena Aierken © All rights reserved.</Container>
    
        
      
