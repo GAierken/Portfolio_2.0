@@ -1,10 +1,10 @@
 import React from 'react'
-import Slider from './carousalImage/Slider'
 import shop from './shop.png'
 import nyc from './nyc.png'
 import therappoint from './therappoint.png'
 
-import { Card, Image, Segment, Item, Label, Button } from 'semantic-ui-react'
+
+import {  Item, Button } from 'semantic-ui-react'
 
 export default function Projects() {
    
@@ -45,8 +45,7 @@ export default function Projects() {
                     projects.map((project) => {
                         return(
                             <Item>
-                                <Item.Image size="large" src={project.img} />
-
+                                <Item.Image className='project image for animation' size="large" src={project.img} />
                                 <Item.Content style={{'text-align': 'left', 'margin': '10px'}}>
                                      <Item.Header style={{color: 'white', 'margin': '10px'}}>{project.name}</Item.Header>
                                      <Item.Description style={{color: 'white', 'margin': '10px'}}>{project.description}</Item.Description>

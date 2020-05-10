@@ -8,7 +8,9 @@ import {Frame} from 'framer'
 
 export default function Home() {
   
- 
+
+
+
   const [selectedLanguage, setSelectedLanguage] = useState('')
   const [dropdownText, setDropdownText] = useState('Select Language')
   const [sidebarVisi, setSidebarVisi] = useState(false)
@@ -106,9 +108,9 @@ export default function Home() {
               
             </Segment>
 
-            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>About Me</Header></Divider>
+          <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>About Me</Header></Divider>
 
-            <Segment basic style={{'background-color': '#00468b', 'margin': '40px'}}>
+            <Segment className='about me section for animation' basic style={{'background-color': '#00468b', 'margin': '40px'}}>
                 <About/>
             </Segment>
 
