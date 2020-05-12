@@ -2,12 +2,16 @@ import React from 'react'
 import shop from './shop.png'
 import nyc from './nyc.png'
 import therappoint from './therappoint.png'
-
+import ScrollTrigger from '@terwanerik/scrolltrigger'
 
 import {  Item, Button } from 'semantic-ui-react'
 
 export default function Projects() {
    
+
+    const trigger = new ScrollTrigger()
+          trigger.add('[data-trigger]')
+
     const projects = [
         {
          name: 'Therappoint',
@@ -45,7 +49,7 @@ export default function Projects() {
                     projects.map((project) => {
                         return(
                             <Item>
-                                <Item.Image className='project image for animation' size="large" src={project.img} />
+                                <Item.Image data-trigger className='project image for animation' size="large" src={project.img} />
                                 <Item.Content style={{'text-align': 'left', 'margin': '10px'}}>
                                      <Item.Header style={{color: 'white', 'margin': '10px'}}>{project.name}</Item.Header>
                                      <Item.Description style={{color: 'white', 'margin': '10px'}}>{project.description}</Item.Description>

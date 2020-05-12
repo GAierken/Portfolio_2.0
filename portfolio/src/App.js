@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Home from './Components/Home'
-import Contacts from './Components/Contacts'
-import { Checkbox, Container, Icon, Divider, GridRow, Image } from 'semantic-ui-react';
+import { Container, Icon, Divider, GridRow, Image } from 'semantic-ui-react';
 import { Switch, Route } from "react-router-dom";
-import About from './Components/About'
-import Projects from './Components/Projects'
 import Sidebar from './Components/Sidebar'
 
 function App() {

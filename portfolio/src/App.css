@@ -45,7 +45,7 @@
 
 
         body { 
-            animation: fadeInAnimation ease 5s; 
+            animation: fadeInAnimation ease 7s; 
             animation-iteration-count: 1; 
             animation-fill-mode: forwards; 
         } 
@@ -88,15 +88,18 @@
     
 }
 
-.project.image.for.animation{
+ .project.image.for.animation{
     left: -1000px;
     animation-name: projectSlideIn;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
+    
+} 
+
 @keyframes projectSlideIn{
     from{left: -1000px;}
     to{left: 20px;}
 }
+
 
