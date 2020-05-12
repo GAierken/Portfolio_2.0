@@ -10,11 +10,11 @@ export default function MenuSidebar(props) {
         props.menuItemClicked()
       
          if(evt.target.dataset.id === '2'){
-          window.scrollTo(0, 770)
+          window.scrollTo(0, 745)
         }else if(evt.target.dataset.id=== '3'){
           window.scrollTo(0, 1500)
         }else{
-          window.scrollTo(0, 2100)
+          window.scrollTo(0, 2200)
         }
         
       }

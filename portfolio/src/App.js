@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Home from './Components/Home'
-import Contacts from './Components/Contacts'
-import { Checkbox, Container, Icon, Divider, GridRow, Image } from 'semantic-ui-react';
+import { Container, Icon, Divider, GridRow, Image } from 'semantic-ui-react';
 import { Switch, Route } from "react-router-dom";
-import About from './Components/About'
-import Projects from './Components/Projects'
 import Sidebar from './Components/Sidebar'
 
 function App() {
@@ -33,7 +30,7 @@ function App() {
   return (
     
     <React.Fragment>
-     <Image style={{width: '1280px', height:'550px', 'object-fit': 'cover', position: 'relative'}} src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
+     <Image style={{width: '1280px', height:'520px', 'object-fit': 'cover', position: 'relative'}} src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
       <Icon bordered name='bars' size='big' link color='blue' style={{top:0, position: 'absolute'}} 
          onClick={() => {
            setSidebarVisi(!sidebarVisi)

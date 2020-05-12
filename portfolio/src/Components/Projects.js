@@ -2,12 +2,12 @@ import React from 'react'
 import shop from './shop.png'
 import nyc from './nyc.png'
 import therappoint from './therappoint.png'
-
-
 import {  Item, Button } from 'semantic-ui-react'
 
 export default function Projects() {
    
+
+    
     const projects = [
         {
          name: 'Therappoint',
@@ -38,14 +38,18 @@ export default function Projects() {
         }
     ]
   
+    
     return (
+        
         <React.Fragment>
             <Item.Group divided>
                 {
                     projects.map((project) => {
                         return(
                             <Item>
+                                
                                 <Item.Image className='project image for animation' size="large" src={project.img} />
+                              
                                 <Item.Content style={{'text-align': 'left', 'margin': '10px'}}>
                                      <Item.Header style={{color: 'white', 'margin': '10px'}}>{project.name}</Item.Header>
                                      <Item.Description style={{color: 'white', 'margin': '10px'}}>{project.description}</Item.Description>
