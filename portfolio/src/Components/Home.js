@@ -12,7 +12,7 @@ export default function Home() {
 
 
   const [selectedLanguage, setSelectedLanguage] = useState('')
-  const [dropdownText, setDropdownText] = useState('Select Language')
+  // const [dropdownText, setDropdownText] = useState('Select Language')
   // const [sidebarVisi, setSidebarVisi] = useState(false)
   const welcomeLang = '“Make it work, make it right, make it fast.” – Kent Beck'
   
@@ -91,7 +91,7 @@ export default function Home() {
               onChange={(evt) => {
                
                 setSelectedLanguage(evt.target.innerHTML)
-                setDropdownText(evt.target.innerHTML)
+                // setDropdownText(evt.target.innerHTML)
               }
               }
               button
