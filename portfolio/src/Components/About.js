@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Segment, Table, Image} from 'semantic-ui-react'
+import {Container, Segment} from 'semantic-ui-react'
 import './About.css'
 import IconImages from './IconImages'
 

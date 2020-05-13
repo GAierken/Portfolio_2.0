@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-import {  Header, Dropdown, Image, Segment, Divider } from 'semantic-ui-react'
+import {  Header, Dropdown, Segment, Divider } from 'semantic-ui-react'
 import About from './About'
 import Projects from './Projects'
 import Contacts from './Contacts'
-import {Frame} from 'framer'
+// import {Frame} from 'framer'
 
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
 
   const [selectedLanguage, setSelectedLanguage] = useState('')
   const [dropdownText, setDropdownText] = useState('Select Language')
-  const [sidebarVisi, setSidebarVisi] = useState(false)
+  // const [sidebarVisi, setSidebarVisi] = useState(false)
   const welcomeLang = '“Make it work, make it right, make it fast.” – Kent Beck'
   
   const languageOptions = [
@@ -119,7 +119,7 @@ export default function Home() {
                 <Projects/>
             </Segment>
 
-            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip'}}>Stay In Touch</Header></Divider>
+            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>Stay In Touch</Header></Divider>
             <Segment  basic textAlign='center' style={{'background-color': '#00468b'}} >
                 <Contacts/>
             </Segment>
