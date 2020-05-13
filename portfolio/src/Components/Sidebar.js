@@ -1,9 +1,9 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 import {Sidebar, Menu, Icon} from 'semantic-ui-react'
 
 export default function MenuSidebar(props) {
-    let history = useHistory()
+    // let history = useHistory()
    
     const handleClick = (evt) => {
          

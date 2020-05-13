@@ -8,18 +8,18 @@ import Sidebar from './Components/Sidebar'
 function App() {
 
 
-  const [darkMode, setDarkMode] = useState(false)
+  // const [darkMode, setDarkMode] = useState(false)
   const [sidebarVisi, setSidebarVisi] = useState(false)
 
-  const handleOnChange = () => {
-      setDarkMode(!darkMode)
-      changeBackground()
-  }
+  // const handleOnChange = () => {
+  //     setDarkMode(!darkMode)
+  //     changeBackground()
+  // }
 
-  const changeBackground = () => {
-    var element = document.body;
-      element.classList.toggle("dark-mode")
-  }
+  // const changeBackground = () => {
+  //   var element = document.body;
+  //     element.classList.toggle("dark-mode")
+  // }
  
   const sidebarMenuClicked = () => {
        setSidebarVisi(false)
@@ -60,7 +60,7 @@ function App() {
           )
         }}/></GridRow>
        
-      <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>Made with ❤️ by Guligena Aierken © All rights reserved.</Container>
+      <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>Made with <span role='img' aria-label='heart'>❤️</span> by Guligena Aierken © All rights reserved.</Container>
    
        
      
