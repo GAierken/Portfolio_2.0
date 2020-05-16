@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f3d7b830.chunk.css",
+    "main.js": "/static/js/main.0c2f7ba9.chunk.js",
+    "main.js.map": "/static/js/main.0c2f7ba9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.eb07c764.js",
+    "runtime-main.js.map": "/static/js/runtime-main.eb07c764.js.map",
+    "static/js/2.01dddb24.chunk.js": "/static/js/2.01dddb24.chunk.js",
+    "static/js/2.01dddb24.chunk.js.map": "/static/js/2.01dddb24.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9033fba99705b7a6d04d3f27a49321a8.js": "/precache-manifest.9033fba99705b7a6d04d3f27a49321a8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f3d7b830.chunk.css.map": "/static/css/main.f3d7b830.chunk.css.map",
+    "static/js/2.01dddb24.chunk.js.LICENSE.txt": "/static/js/2.01dddb24.chunk.js.LICENSE.txt",
+    "static/media/nyc.png": "/static/media/nyc.0ce03c0b.png",
+    "static/media/resume.pdf": "/static/media/resume.6e3230be.pdf",
+    "static/media/shop.png": "/static/media/shop.0abc4b7b.png",
+    "static/media/therappoint.png": "/static/media/therappoint.efd632fc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb07c764.js",
+    "static/js/2.01dddb24.chunk.js",
+    "static/css/main.f3d7b830.chunk.css",
+    "static/js/main.0c2f7ba9.chunk.js"
+  ]
+}
