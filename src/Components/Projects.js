@@ -12,7 +12,7 @@ export default function Projects() {
         {
          name: 'Therappoint',
          description: 'Appointment scheduling app developed especially for early intervention service agencies',
-         tools: 'Ruby on Rails, bcrypt, active_model_serializers, PostgreSQL, React, Redux, Thunk, react-datepicker, Google Map Api, Geocode, Sweetalert, Semantic UI, CSS, HTML, .dotenv',
+         tools: 'Ruby on Rails, bcrypt, active_model_serializers, PostgreSQL, React, Redux, Thunk, React-router, react-datepicker, Google Map Api, Geocode, Sweetalert, Semantic UI, CSS, HTML, .dotenv',
          frontend: 'https://github.com/GAierken/Therappoint_frontend',
          backend: 'https://github.com/GAierken/Therappoint_backend',
          demo: 'https://www.youtube.com/watch?v=QZEsGHZpaoo&feature=youtu.be',
