@@ -30,7 +30,7 @@ export default function Projects() {
         {
          name: 'Flatiron Baby Shopping',
          description: 'E-commerce web-app designed for baby-products',
-         tools: 'Ruby, Rails, BCrypt, JWT, PostgreSQL, .dotenv, React, CSS, HTML',
+         tools: 'Ruby, Rails, BCrypt, JWT, PostgreSQL, .dotenv, React, react-router, CSS, HTML',
          frontend: 'https://github.com/GAierken/Flatiron-Shopping-Frontend',
          backend: 'https://github.com/GAierken/Flatiron-Shopping-Backend',
          demo: 'https://www.youtube.com/watch?v=7cNyoHjJjiw&feature=youtu.be',
