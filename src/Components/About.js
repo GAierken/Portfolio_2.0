@@ -7,7 +7,7 @@ import IconImages from './IconImages'
 export default function About() {
     
     const containerStyles = {
-        'font-size': '1vw',
+        'font-size': '20px',
         'font-family': "'Montserrat', sans-serif",
         'margin-bottom': '40px',
         'letter-spacing': '-.008em',
