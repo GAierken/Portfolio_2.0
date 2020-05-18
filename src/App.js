@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Home from './Components/Home'
-import { Container, Icon, Divider, GridRow, Image } from 'semantic-ui-react';
+import { Container, Icon, Divider, Image } from 'semantic-ui-react';
 import { Switch, Route } from "react-router-dom";
 import Sidebar from './Components/Sidebar'
 
@@ -30,7 +30,7 @@ function App() {
   return (
     
     <React.Fragment>
-     <Image style={{width: '2000px', height:'520px', 'object-fit': 'cover', position: 'relative'}} src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
+     <Image style={{width: '2000px', height:'700px', 'object-fit': 'cover', position: 'relative'}} src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
       <Icon bordered name='bars' size='big' link color='blue' style={{top:0, position: 'absolute'}} 
          onClick={() => {
            setSidebarVisi(!sidebarVisi)
@@ -49,7 +49,7 @@ function App() {
 
     
       <Divider/>
-        {/* <GridRow> */}
+      
           <Icon aria-label="return to top" className="scroll to top button" name='chevron circle up' size='huge' inverted 
           
           onClick={()=> {
@@ -62,7 +62,7 @@ function App() {
         }}
         
         />
-        {/* </GridRow> */}
+       
        
       <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>Made with <span role='img' aria-label='heart'>❤️</span> by Guligena Aierken © All rights reserved.</Container>
    
