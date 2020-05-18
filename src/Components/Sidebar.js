@@ -12,7 +12,7 @@ export default function MenuSidebar(props) {
          if(evt.target.dataset.id === '2'){
           window.scrollTo(0, 745)
         }else if(evt.target.dataset.id=== '3'){
-          window.scrollTo(0, 1500)
+          window.scrollTo(0, 1600)
         }else{
           window.scrollTo(0, 2200)
         }

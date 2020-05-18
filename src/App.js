@@ -49,7 +49,7 @@ function App() {
 
     
       <Divider/>
-        <GridRow><Icon className="scroll to top button" name='chevron circle up' size='big' inverted 
+        <GridRow><Icon className="scroll to top button" name='chevron circle up' size='huge' inverted 
           
           onClick={()=> {
           window.scrollTo(
