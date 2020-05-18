@@ -49,7 +49,8 @@ function App() {
 
     
       <Divider/>
-        <GridRow><Icon className="scroll to top button" name='chevron circle up' size='huge' inverted 
+        {/* <GridRow> */}
+          <Icon aria-label="return to top" className="scroll to top button" name='chevron circle up' size='huge' inverted 
           
           onClick={()=> {
           window.scrollTo(
@@ -58,7 +59,10 @@ function App() {
               behavior: 'smooth'
             }
           )
-        }}/></GridRow>
+        }}
+        
+        />
+        {/* </GridRow> */}
        
       <Container style={{'bottom': '0', color: 'white', 'font-family': "'Montserrat', sans-serif"}} textAlign='center'>Made with <span role='img' aria-label='heart'>❤️</span> by Guligena Aierken © All rights reserved.</Container>
    

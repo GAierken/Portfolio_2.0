@@ -72,6 +72,12 @@
     to{opacity: 1;}
 }
 
+.scroll.to.top.button{
+    position: absolute;
+    right: 0;
+  
+}
+
 .scroll.to.top.button:hover{
     color: lightskyblue;
 }
