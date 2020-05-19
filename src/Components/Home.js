@@ -108,18 +108,18 @@ export default function Home() {
               
             </Segment>
 
-          <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>About Me</Header></Divider>
+          <Divider id="about" horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>About Me</Header></Divider>
 
             <Segment className='about me section for animation' basic style={{'background-color': '#00468b', 'margin': '40px'}}>
                 <About/>
             </Segment>
 
-            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>My Projects</Header></Divider>
+            <Divider id='projects' horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>My Projects</Header></Divider>
             <Segment textAlign='center' basic style={{'background-color': '#00468b', 'margin': '40px'}}>
                 <Projects/>
             </Segment>
 
-            <Divider  horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>Stay In Touch</Header></Divider>
+            <Divider id='contacts' horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>Stay In Touch</Header></Divider>
             <Segment  basic textAlign='center' style={{'background-color': '#00468b'}} >
                 <Contacts/>
             </Segment>
