@@ -47,8 +47,9 @@ export default function Projects() {
                     projects.map((project) => {
                         return(
                             <Item>
-                                
-                                <Item.Image className='project image for animation' size="large" src={project.img} />
+
+                                {/* <Item.Image style={{display: 'block'}}src='https://joinswoop.com/assets/img/macbook-b0327c6d0c.svg' size='large'/> */}
+                                <Item.Image  className='project image for animation' size='large' src={project.img} />
                               
                                 <Item.Content style={{'text-align': 'left', 'margin': '10px'}}>
                                      <Item.Header style={{color: 'white', 'margin': '10px'}}>{project.name}</Item.Header>
