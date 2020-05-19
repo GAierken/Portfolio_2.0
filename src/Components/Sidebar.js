@@ -4,17 +4,23 @@ import {Sidebar, Menu, Icon} from 'semantic-ui-react'
 
 export default function MenuSidebar(props) {
     // let history = useHistory()
+
+    let aboutMeDiv = document.getElementById('about')
+    let projectsDiv = document.getElementById('projects')
+    let contactsDiv = document.getElementById('contacts')
    
     const handleClick = (evt) => {
-         
+        
+
         props.menuItemClicked()
       
          if(evt.target.dataset.id === '2'){
-          window.scrollTo(0, 745)
+           
+          window.scrollTo(aboutMeDiv.getBoundingClientRect().x, aboutMeDiv.getBoundingClientRect().y)
         }else if(evt.target.dataset.id=== '3'){
-          window.scrollTo(0, 1600)
+          window.scrollTo(projectsDiv.getBoundingClientRect().x, projectsDiv.getBoundingClientRect().y)
         }else{
-          window.scrollTo(0, 2200)
+          window.scrollTo(contactsDiv.getBoundingClientRect().x, contactsDiv.getBoundingClientRect().y)
         }
         
       }
