@@ -33,7 +33,6 @@ function App() {
      <Image style={{width: '2000px', height:'700px', 'object-fit': 'cover', position: 'relative'}} src='https://static.vecteezy.com/system/resources/previews/000/227/854/original/female-developer-vector.jpg'/>
       <Icon aria-label='menu bars' color='blue' bordered name='bars' size='big' link style={{top:'10px', left:'10px', position: 'absolute'}} 
          onClick={() => {
-           console.log('working')
            setSidebarVisi(!sidebarVisi)
          }
          }
