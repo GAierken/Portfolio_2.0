@@ -54,7 +54,7 @@ export default function Projects() {
                                 <Item.Content style={{'text-align': 'left', 'margin': '10px'}}>
                                      <Item.Header style={{color: 'white', 'margin': '10px'}}>{project.name}</Item.Header>
                                      <Item.Description style={{color: 'white', 'margin': '10px'}}>{project.description}</Item.Description>
-                                     <Item.Description style={{color: 'white', 'margin': '10px'}}>Used Tools: {project.tools}</Item.Description>
+                                     <Item.Description style={{color: 'white', 'margin': '10px'}}>Tools: {project.tools}</Item.Description>
                                     <Item.Extra>
                                         <Button inverted size='mini'
                                         onClick={() => {
