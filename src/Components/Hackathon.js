@@ -5,7 +5,6 @@ export default function Hackathon() {
         <React.Fragment>
             <Container>Hackathons</Container>
         </React.Fragment>
-           
         
     )
 }

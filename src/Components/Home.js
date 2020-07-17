@@ -119,6 +119,11 @@ export default function Home() {
                 <Projects/>
             </Segment>
 
+            {/* <Divider id='projects' horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>My Technical Projects</Header></Divider>
+            <Segment textAlign='center' basic style={{'background-color': '#00468b', 'margin': '40px'}}>
+                <Projects/>
+            </Segment> */}
+
             <Divider id='contacts' horizontal><Header as='h3' style={{'font-family': "'Montserrat', sans-serif", color: 'papayawhip', "margin": '40px'}}>Stay In Touch</Header></Divider>
             <Segment  basic textAlign='center' style={{'background-color': '#00468b'}} >
                 <Contacts/>
