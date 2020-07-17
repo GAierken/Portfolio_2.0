@@ -1,9 +1,9 @@
 import React from 'react'
-
+import {  Container } from 'semantic-ui-react'
 export default function Hackathon() {
     return (
         <div>
-            Hackathon
+           <Container>Hackathons</Container>
         </div>
     )
 }
