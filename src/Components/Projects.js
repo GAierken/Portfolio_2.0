@@ -1,6 +1,7 @@
 import React from 'react'
 import shop from './shop.png'
 import nyc from './nyc.png'
+import help from './help.png'
 import therappoint from './therappoint.png'
 import {  Item, Button } from 'semantic-ui-react'
 
@@ -9,6 +10,15 @@ export default function Projects() {
 
     
     const projects = [
+        {
+            name: 'Help@Home',
+            description: 'A platform to connect volunteers and people who are in need.',
+            tools: 'Ruby on Rails, BCrypt, JWT, PostgreSQL, .dotenv, Heroku, JavaScript',
+            frontend: 'https://github.com/emilyychenn/girlsintechhackathon',
+            backend: 'https://github.com/GAierken/girlsintech_hackathon_backend',
+            demo: 'https://www.youtube.com/watch?v=2WOvksIWGQk&feature=emb_title',
+            img: help
+        },
         {
          name: 'Therappoint',
          description: 'Appointment scheduling app developed especially for early intervention service agencies',
@@ -30,7 +40,7 @@ export default function Projects() {
         {
          name: 'Flatiron Baby Shopping',
          description: 'E-commerce web-app designed for baby-products',
-         tools: 'Ruby, Rails, BCrypt, JWT, PostgreSQL, .dotenv, React, react-router, CSS, HTML',
+         tools: 'Ruby on Rails, BCrypt, JWT, PostgreSQL, .dotenv, React, react-router, CSS, HTML',
          frontend: 'https://github.com/GAierken/Flatiron-Shopping-Frontend',
          backend: 'https://github.com/GAierken/Flatiron-Shopping-Backend',
          demo: 'https://www.youtube.com/watch?v=7cNyoHjJjiw&feature=youtu.be',
