@@ -2,6 +2,7 @@ import React from 'react'
 import shop from './shop.png'
 import nyc from './nyc.png'
 import help from './help.png'
+import record from './record.png'
 import therappoint from './therappoint.png'
 import {  Item, Button } from 'semantic-ui-react'
 
@@ -11,8 +12,17 @@ export default function Projects() {
     
     const projects = [
         {
+            name: 'Record Me!',
+            description: 'A mobile app to ask other nearby to record police interaction',
+            tools: 'Ruby on Rails, PostgreSQL, JavaScript, React Native, expo.io',
+            frontend: 'https://github.com/DGFF-Harmonyhack/Frontend-React-Native',
+            backend: 'https://github.com/DGFF-Harmonyhack/backend-ruby-rails',
+            demo: 'https://www.youtube.com/watch?time_continue=52&v=mZlK-NMBzeE&feature=emb_title',
+            img: record
+        },
+        {
             name: 'Help@Home',
-            description: 'A platform to connect volunteers and people who are in need.',
+            description: 'A platform to connect volunteers and people who are in need',
             tools: 'Ruby on Rails, BCrypt, JWT, PostgreSQL, .dotenv, Heroku, JavaScript',
             frontend: 'https://github.com/emilyychenn/girlsintechhackathon',
             backend: 'https://github.com/GAierken/girlsintech_hackathon_backend',
