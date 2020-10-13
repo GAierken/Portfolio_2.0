@@ -4,6 +4,7 @@ import nyc from './nyc.png'
 import help from './help.png'
 import record from './record.png'
 import therappoint from './therappoint.png'
+import weather from './weather.png'
 import {  Item, Button } from 'semantic-ui-react'
 
 export default function Projects() {
@@ -11,6 +12,15 @@ export default function Projects() {
 
     
     const projects = [
+        {
+            name: 'Check Your Weather',
+            description: 'A basic weather app to check weather forecast',
+            tools: 'JavaScript, React, Redux, Redux-Saga, React-Geocode, .dotenv, moment.js, Semantic-ui React, Google Map API, Geocode, One Call API',
+            frontend: 'https://github.com/GAierken/Check-Your-Weather',
+            backend: 'https://openweathermap.org/api/one-call-api',
+            demo: 'https://www.youtube.com/watch?v=3LBGgAC0hVM&feature=youtu.be',
+            img: weather
+        },
         {
             name: 'Record Me!',
             description: 'A mobile app to ask other nearby to record police interaction',
@@ -32,7 +42,7 @@ export default function Projects() {
         {
          name: 'Therappoint',
          description: 'Appointment scheduling app developed especially for early intervention service agencies',
-         tools: 'Ruby on Rails, bcrypt, active_model_serializers, PostgreSQL, React, Redux, Thunk, React-router, react-datepicker, Google Map Api, Geocode, Sweetalert, Semantic UI, CSS, HTML, .dotenv',
+         tools: 'Ruby on Rails, bcrypt, active_model_serializers, PostgreSQL, React, Redux, Thunk, React-router, react-datepicker, Google Map API, Geocode, Sweetalert, Semantic UI, CSS, HTML, .dotenv',
          frontend: 'https://github.com/GAierken/Therappoint_frontend',
          backend: 'https://github.com/GAierken/Therappoint_backend',
          demo: 'https://www.youtube.com/watch?v=QZEsGHZpaoo&feature=youtu.be',
