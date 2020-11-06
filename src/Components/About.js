@@ -24,7 +24,7 @@ export default function About() {
                   <IconImages/>
                 </Segment>
                 <Segment basic textAlign='center' >
-                  <Container  textAlign="justified" className="my about content for animation purpose" style={containerStyles} >Hello world! Welcome to my programming website, I’m Guligena, an aspiring full stack web developer. Utilizing my technical skills and experience to create user friendly and innovative web applications is my expertise. I’m proficient with but not limited to JavaScript, React, Ruby on Rails and SQL (PostgreSQL & SQLite). 
+                  <Container  textAlign="justified" className="my about content for animation purpose" style={containerStyles} >Hello world! Welcome to my programming website, I’m Guligena, an aspiring full stack web developer. Utilizing my technical skills and experience to create user friendly and innovative web applications is my expertise. I’m proficient with but not limited to JavaScript, React, React Native, Ruby on Rails and SQL (PostgreSQL & SQLite). 
 
                   </Container>
                   <Container textAlign="justified" style={containerStyles}>My linguist background helps me to learn programming languages and frameworks quickly and apply programming in a focused and detail-oriented way, which allows me to construct organized and documented code. 
