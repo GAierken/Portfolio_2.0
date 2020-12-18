@@ -16,7 +16,7 @@ import Resume from '../resume.pdf'
             <Popup style={popupStyle} inverted size='mini' content='GitHub' trigger={<Icon style={{color: '#efbbff'}}  link size="huge" name='github square' onClick={() => {window.open('https://github.com/GAierken')}}/>}/>
             <Popup style={popupStyle} inverted size='mini' content='Medium' trigger={<Icon style={{color: '#efbbff'}}  link size="huge" name='medium' onClick={() => {window.open('https://gaierken.medium.com/')}}/>}/>
             <Popup style={popupStyle} inverted size='mini' content='Email Me' trigger={ <Icon style={{color: '#efbbff'}}  link size="huge" name='mail' onClick={() => {window.open('mailto:g.aierken@gmail.com')}}/>}/>
-            <Popup style={popupStyle} inverted size='mini' content='Résumé' trigger={<Icon style={{color: '#efbbff'}} link size="huge" name='file alternate' onClick={() => {window.open(Resume)}}/>}/>
+            {/* <Popup style={popupStyle} inverted size='mini' content='Résumé' trigger={<Icon style={{color: '#efbbff'}} link size="huge" name='file alternate' onClick={() => {window.open(Resume)}}/>}/> */}
             
             
         </div>
