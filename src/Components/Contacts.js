@@ -1,6 +1,5 @@
 import React from 'react'
 import { Icon, Popup } from 'semantic-ui-react'
-import Resume from '../resume.pdf'
 
 
  const Contacts = () => {
